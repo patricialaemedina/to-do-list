@@ -207,7 +207,7 @@ export default function TodoList() {
                         </>
                     ) : (
                         <div className='empty-list'>
-                            <TbMoodEmpty />
+                            <TbMoodEmpty className="mood" />
                             <p>No list selected.</p>
                             <Button className='createNewList' onClick={handleShowModal}>CREATE NEW LIST</Button>
                         </div>
