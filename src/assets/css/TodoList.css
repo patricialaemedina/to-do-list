@@ -10,7 +10,7 @@
     min-height: 100vh;
     border-right: 1px solid #dee2e6;
     background-color: #F8FFFE !important;
-    color: #313131 !important;
+    color: #6C757D !important;
 }
 
 .h1 {
@@ -23,7 +23,7 @@
     margin-bottom: 0;
     user-select: none;
     pointer-events: none;
-    color: #313131;
+    color: #6C757D;
 }
 
 .header-container {
@@ -60,7 +60,7 @@
 .addNewList svg {
     width: 70%;
     height: 70%;
-    fill: #313131;
+    fill: #6C757D;
 }
 
 .addNewList:hover {
@@ -82,7 +82,7 @@
     border-bottom-left-radius: 0 !important;
     margin-bottom: 0.5rem;
     font-weight: 200 !important;
-    color: #313131;
+    color: #6C757D;
 }
 
 .active {
@@ -114,7 +114,7 @@
     font-size: 1rem;
     user-select: none;
     pointer-events: none;
-    color: #313131;
+    color: #6C757D;
 }
 
 .currentList {
@@ -148,4 +148,12 @@
 .dlt:hover {
     background-color: #F4512C !important;
     border: 0;
+}
+
+.mood {
+    color: #6C757D;
+}
+
+.input {
+    color: #6C757D !important;
 }
