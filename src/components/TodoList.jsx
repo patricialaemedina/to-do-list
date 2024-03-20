@@ -137,26 +137,41 @@ export default function TodoList() {
     };
 
     const clearAllActivities = () => {
-        const updatedData = data.map(list => ({
-            ...list,
-            activities: list.activities.map(todo => ({
-                ...todo,
-                completed: false
-            }))
-        }));
+        if (!selectedList) return;
+
+        const updatedData = data.map(list => {
+            if (list.id === selectedList) {
+                return {
+                    ...list,
+                    activities: list.activities.map(todo => ({
+                        ...todo,
+                        completed: false
+                    }))
+                };
+            }
+            return list;
+        });
         setData(updatedData);
     };
 
     const markAllCompleted = () => {
-        const updatedData = data.map(list => ({
-            ...list,
-            activities: list.activities.map(todo => ({
-                ...todo,
-                completed: true
-            }))
-        }));
+        if (!selectedList) return;
+
+        const updatedData = data.map(list => {
+            if (list.id === selectedList) {
+                return {
+                    ...list,
+                    activities: list.activities.map(todo => ({
+                        ...todo,
+                        completed: true
+                    }))
+                };
+            }
+            return list;
+        });
         setData(updatedData);
     };
+
 
     return (
         <>
