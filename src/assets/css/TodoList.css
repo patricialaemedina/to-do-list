@@ -1,0 +1,151 @@
+.row {
+    margin: 0;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.lists-col {
+    padding: 0.5rem;
+    height: 100%;
+    min-height: 100vh;
+    border-right: 1px solid #dee2e6;
+    background-color: #F8FFFE !important;
+    color: #313131 !important;
+}
+
+.h1 {
+    padding: 1.5rem;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    user-select: none;
+    pointer-events: none;
+    color: #313131;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 1rem;
+}
+
+.addNewList {
+    cursor: pointer;
+    color: #F8FFFE;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 1.5rem;
+    position: relative;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #FF7F4D;
+    outline: none;
+    border-radius: 50%;
+    transition: background-color 0.1s ease;
+}
+
+.addNewList:hover {
+    background-color: #F4512C;
+    color: #F8FFFE;
+}
+
+.addNewList svg {
+    width: 70%;
+    height: 70%;
+    fill: #313131;
+}
+
+.addNewList:hover {
+    background-color: #F4512C;
+    fill: #F8FFFE;
+}
+
+.addNewList:hover svg {
+    background-color: #F4512C;
+    fill: #F8FFFE;
+}
+
+.taskLists {
+    background-color: #F8FFFE !important;
+    border: none !important;
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    margin-bottom: 0.5rem;
+    font-weight: 200 !important;
+    color: #313131;
+}
+
+.active {
+    background-color: #F4512C !important;
+    border-radius: 8px !important;
+    color: #F8FFFE;
+}
+
+.badge {
+    background-color: #FF7F4D !important;
+}
+
+.empty-list,
+.empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+    min-height: 100vh;
+}
+
+.empty-list p,
+.empty {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1rem;
+    user-select: none;
+    pointer-events: none;
+    color: #313131;
+}
+
+.currentList {
+    background-color: #F8FFFE;
+}
+
+.createNewList {
+    background-color: #9D71BC !important;
+    border: 0;
+}
+
+.createNewList:hover {
+    background-color: #5E1B89 !important;
+}
+
+.cancel {
+    background-color: #9D71BC !important;
+    border: 0;
+}
+
+.cancel:hover {
+    background-color: #5E1B89 !important;
+    border: 0;
+}
+
+.dlt {
+    background-color: #FF7F4D !important;
+    border: 0;
+}
+
+.dlt:hover {
+    background-color: #F4512C !important;
+    border: 0;
+}

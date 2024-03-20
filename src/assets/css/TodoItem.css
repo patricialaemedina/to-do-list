@@ -1,0 +1,62 @@
+.heading {
+    padding: 1.5rem 0 0 1rem;
+    margin-bottom: 0;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+    user-select: none;
+    pointer-events: none;
+    color: #313131;
+}
+
+.description {
+    padding: 0 0 0 1rem;
+    margin-top: 0;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1rem;
+    user-select: none;
+    pointer-events: none;
+    color: #313131;
+}
+
+.trash {
+    background-color: #9D71BC;
+    border: 1px solid #9D71BC;
+}
+
+.trash:hover {
+    background-color: #5E1B89;
+    border: 1px solid #9D71BC;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-container button {
+    margin-right: 0.5rem;
+    background-color: #9D71BC;
+    border: 0;
+}
+
+.button-container button:hover {
+    background-color: #5E1B89;
+    border: 0;
+}
+
+.delList {
+    background-color: #FF7F4D !important;
+    border: 0;
+}
+
+.delList:hover {
+    background-color: #F4512C !important;
+    border: 0;
+}
