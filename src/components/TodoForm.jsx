@@ -24,6 +24,7 @@ export default function TodoForm({ addNewActivity }) {
             <InputGroup className="mb-4">
                 <InputGroup.Checkbox />
                 <Form.Control
+                    className="input"
                     required
                     pattern="\S.*"
                     value={text}
