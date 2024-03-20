@@ -17,7 +17,9 @@ export default function TodoItem({ list, updateTodo, deleteTodo, addNewActivity,
     };
 
     const handleEditInputChange = (todoId, newText) => {
-        editTodo(todoId, newText);
+        if (newText.trim() !== "") {
+            editTodo(todoId, newText);
+        }
     };
 
     return (
@@ -46,6 +48,7 @@ export default function TodoItem({ list, updateTodo, deleteTodo, addNewActivity,
                             className="input"
                             value={todo.text}
                             onChange={(e) => handleEditInputChange(todo.id, e.target.value)}
+                            required
                         />
                         <>
                             <Button className="trash" onClick={() => handleDelete(todo.id)}><FaTrash /></Button>
