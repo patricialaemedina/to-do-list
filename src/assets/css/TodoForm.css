@@ -6,3 +6,7 @@
 .submitbtn:hover {
     background-color: #5E1B89;
 }
+
+.input {
+    color: #6C757D !important;
+}
